@@ -10,7 +10,7 @@ public class SentryTargeting : MonoBehaviour
     public float maxVisionDistance = 10;
     public float visionAngle = 45;
 
-    private List<TargetableThing> potentialTargets = new List<TargetableThing>();
+    private List<TargetablePlayer> potentialTargets = new List<TargetablePlayer>();
 
     float cooldownScan = 0;
     float cooldownPick = 0;
@@ -64,8 +64,8 @@ public class SentryTargeting : MonoBehaviour
 
         // refill the list
 
-        TargetableThing[] things = GameObject.FindObjectsOfType<TargetableThing>();
-        foreach (TargetableThing thing in things)
+        TargetablePlayer[] things = GameObject.FindObjectsOfType<TargetablePlayer>();
+        foreach (TargetablePlayer thing in things)
         {
             // if we can see it
             // add target to potentialTargets
@@ -88,7 +88,7 @@ public class SentryTargeting : MonoBehaviour
         float closestDistanceSoFar = 0;
 
         // finds closest targetable thing and sets it as our target
-        foreach (TargetableThing pt in potentialTargets)
+        foreach (TargetablePlayer pt in potentialTargets)
         {
             float d = (pt.transform.position - transform.position).sqrMagnitude;
 

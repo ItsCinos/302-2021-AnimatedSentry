@@ -315,13 +315,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.8845159, y: -0.24840604, z: -0.072676644, w: 0.38812912}
-  m_LocalPosition: {x: 0, y: 3, z: 2.664}
+  m_LocalRotation: {x: 0.59062004, y: -0.5000135, z: -0.15648139, w: 0.613733}
+  m_LocalPosition: {x: 3.94, y: 1.26, z: 4.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 40.58, y: -154.965, z: -139.242}
+  m_LocalEulerAnglesHint: {x: 34.644, y: -103.904, z: -72.063}
 --- !u!1 &709097918
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,7 +466,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1558228243}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbd3a3c8297efa44dbe0e497b995f8b5, type: 3}
+  m_Script: {fileID: 11500000, guid: 5883c6258771c1d4c82e0c3b41a0e17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1558228245 stripped
@@ -553,6 +553,10 @@ PrefabInstance:
       propertyPath: visionAngle
       value: 55
       objectReference: {fileID: 0}
+    - target: {fileID: 3552158753771831693, guid: 2a73db4124a23d2419a06021f1e4f942, type: 3}
+      propertyPath: minVisionDistance
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a73db4124a23d2419a06021f1e4f942, type: 3}
 --- !u!1001 &4403675284899118742
@@ -566,6 +570,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1558228245}
+    - target: {fileID: 4403675285539444585, guid: a8fc5db4c00ec5c49b7ebb8178b8413a, type: 3}
+      propertyPath: minVisionDistance
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4403675285539444586, guid: a8fc5db4c00ec5c49b7ebb8178b8413a, type: 3}
       propertyPath: m_Name
       value: Sentry
@@ -612,6 +620,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4403675285539444587, guid: a8fc5db4c00ec5c49b7ebb8178b8413a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403675286660178771, guid: a8fc5db4c00ec5c49b7ebb8178b8413a, type: 3}
+      propertyPath: lockRotationX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4403675286660178771, guid: a8fc5db4c00ec5c49b7ebb8178b8413a, type: 3}
+      propertyPath: lockRotationY
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
