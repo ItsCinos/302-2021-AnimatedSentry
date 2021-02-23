@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerTargeting : MonoBehaviour
+public class SentryTargeting : MonoBehaviour
 {
     public Transform target;
-    public bool wantsToTarget = false;
+    public bool wantsToTarget = true;
     public float minVisionDistance = 2;
     public float maxVisionDistance = 10;
     public float visionAngle = 45;
@@ -17,12 +17,12 @@ public class PlayerTargeting : MonoBehaviour
 
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        
     }
 
     void Update()
     {
-        wantsToTarget = Input.GetButton("Fire2");
+        wantsToTarget = true;
 
         if (!wantsToTarget) target = null;
 
@@ -82,8 +82,8 @@ public class PlayerTargeting : MonoBehaviour
     {
         cooldownPick = .25f;
 
-        //if (target) return; // we already have a target
-        target = null;
+        if (target) return; // we already have a target
+        //target = null;
 
         float closestDistanceSoFar = 0;
 
