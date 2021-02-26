@@ -152,6 +152,8 @@ MonoBehaviour:
   walkSpeed: 5
   leg1: {fileID: 9005937113736073393}
   leg2: {fileID: 3322510255089486675}
+  gravityMultiplier: 10
+  jumpInpulse: 5
 --- !u!114 &3552158753771831693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,9 +168,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   wantsToTarget: 0
+  wantsToAttack: 0
   minVisionDistance: 2
   maxVisionDistance: 10
   visionAngle: 45
+  armL: {fileID: 8035966209524672804}
+  armR: {fileID: 4670765055136956069}
 --- !u!1 &730202734704864304
 GameObject:
   m_ObjectHideFlags: 0

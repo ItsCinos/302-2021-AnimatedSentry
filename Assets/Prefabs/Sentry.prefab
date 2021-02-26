@@ -392,6 +392,7 @@ GameObject:
   - component: {fileID: 4403675285539444587}
   - component: {fileID: 4403675285539444584}
   - component: {fileID: 4403675285539444585}
+  - component: {fileID: 4059633518054667859}
   m_Layer: 0
   m_Name: Sentry
   m_TagString: Untagged
@@ -452,6 +453,19 @@ MonoBehaviour:
   minVisionDistance: 1
   maxVisionDistance: 10
   visionAngle: 75
+--- !u!114 &4059633518054667859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4403675285539444586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aed91db45c1c934ca0fc432cbdc6575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthMax: 100
 --- !u!1 &4403675285679816595
 GameObject:
   m_ObjectHideFlags: 0
