@@ -95,6 +95,7 @@ public class PlayerTargeting : MonoBehaviour
 
         // attack!
 
+
         camOrbit.Shake(.5f);
 
         if(handL) Instantiate(prefabMuzzleFlash, handL.position, handL.rotation);
@@ -108,6 +109,7 @@ public class PlayerTargeting : MonoBehaviour
         armL.position += -armL.forward * .1f;
         armR.position += -armR.forward * .1f;
 
+        SoundEffectBoard.PlayPlayerShot();
     }
 
     private bool CanSeeThing(Transform thing)

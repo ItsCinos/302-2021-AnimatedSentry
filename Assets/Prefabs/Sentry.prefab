@@ -453,6 +453,7 @@ MonoBehaviour:
   minVisionDistance: 1
   maxVisionDistance: 10
   visionAngle: 75
+  sentryNeck: {fileID: 4403675286660178770}
 --- !u!114 &4059633518054667859
 MonoBehaviour:
   m_ObjectHideFlags: 0
